@@ -20,14 +20,14 @@ function App() {
         </thead>
         <tbody>
           {pokemon.slice(0,20).map(pokemon => (
-            //slice to get the first 20 pokemon
+            //start at index 0, slice off 20 items.
           <tr
             //Key needs to be unique to all it's sibling
             //can join multiple items e.g.
             //{[pokemon.id,pokemon.name.english].join(':')}
             key = {pokemon.id}
           >
-            <td>{pokemon.name.english}</td>
+            <td>{pokemon.name.chinese}</td>
             <td>{pokemon.type.join(', ')}</td>
           </tr>
           ))}
