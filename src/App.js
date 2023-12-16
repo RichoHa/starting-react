@@ -27,7 +27,7 @@ function App() {
             //{[pokemon.id,pokemon.name.english].join(':')}
             key = {pokemon.id}
           >
-            <td>{pokemon.name.chinese}</td>
+            <td>{pokemon.name.english}</td>
             <td>{pokemon.type.join(', ')}</td>
           </tr>
           ))}
